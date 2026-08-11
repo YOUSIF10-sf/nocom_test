@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة نوكوم المحدودة (NoComm Ltd.) — المنظومة المتكاملة للأنظمة الأمنية والذكية والاتصالات</title>
+  <meta name="description" content="شركة نوكوم المحدودة (NoComm Ltd.) — المتخصصة في أنظمة الأمان والمراقبة، التحكم في الدخول والخروج، إنذار الحريق، الشبكات والاتصالات، السنترالات، إدارة المباني BMS، والمنازل الذكية والأنظمة المرئية والصوتية.">
+  <meta name="keywords" content="شركة نوكوم المحدودة, NoComm Ltd, أنظمة أمان ومراقبة, تحكم بالدخول والخروج, إنذار حريق, شبكات واتصالات, سنترال, BMS, منازل ذكية, أنظمة مرئية وصوتية, الرياض, السعودية">
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:title" content="شركة نوكوم المحدودة — NoComm Ltd.">
+  <meta property="og:description" content="توريد وتنفيذ مباشر لأحدث أنظمة الأمان، التحكم بالدخول، إنذار الحريق، الشبكات، السنترال، إدارة المباني BMS، والمنازل الذكية بأعلى معايير الجودة.">
+  <meta property="og:type" content="website">
+
+  <!-- Crisp Vector Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230A0F1D'/><rect x='4' y='4' width='92' height='92' rx='18' fill='none' stroke='%23D9A01B' stroke-width='3'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='58' font-weight='900' fill='%23D9A01B'>N</text></svg>">
+
+  <!-- Google Fonts: IBM Plex Sans Arabic, Tajawal, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Standalone Enterprise Design System CSS -->
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Sticky Clean Corporate Header & Navigation
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo-container" aria-label="شركة نوكوم المحدودة الصفحة الرئيسية">
+        <span class="logo-badge">N</span>
+        <div>
+          <span class="logo-name en-headline">NoComm Ltd.</span>
+          <span class="zero-commission-tag" style="display: block;">شركة نوكوم المحدودة · ZERO COMMISSION</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#profile" class="nav-link">بروفايل الشركة</a></li>
+        <li><a href="#services" class="nav-link">الأنشطة والمنظومات</a></li>
+        <li><a href="#estimator" class="nav-link">حاسبة التقدير</a></li>
+        <li><a href="#portfolio" class="nav-link">المشاريع</a></li>
+        <li><a href="#lifecycle" class="nav-link">مراحل التنفيذ</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <!-- Navbar Actions -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary btn-sm btn-quote-trigger" onclick="openQuoteModalWithService('طلب استشارة هندسية وعرض سعر')">
+          <i class="fas fa-file-invoice-dollar"></i> طلب عرض سعر
+        </button>
+        <button type="button" class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="فتح القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div>
+      <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 1.2rem; border-bottom: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+        <div class="logo-container">
+          <span class="logo-badge" style="width: 34px; height: 34px; font-size: 1.1rem;">N</span>
+          <span class="logo-name en-headline" style="font-size: 1.25rem;">NoComm Ltd.</span>
+        </div>
+        <button type="button" id="mobile-drawer-close" style="background: none; border: none; font-size: 1.3rem; color: var(--text-muted); cursor: pointer;" aria-label="إغلاق القائمة">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.9rem;">
+        <li><a href="#hero" class="mobile-nav-link" style="color: var(--text-primary); text-decoration: none; font-weight: 700; font-size: 1.05rem;"><i class="fas fa-home" style="color: var(--primary-gold); margin-left: 0.5rem;"></i> الرئيسية</a></li>
+        <li><a href="#profile" class="mobile-nav-link" style="color: var(--text-primary); text-decoration: none; font-weight: 700; font-size: 1.05rem;"><i class="fas fa-building" style="color: var(--primary-gold); margin-left: 0.5rem;"></i> بروفايل الشركة ونبذة تعريفية</a></li>
+        <li><a href="#services" class="mobile-nav-link" style="color: var(--text-primary); text-decoration: none; font-weight: 700; font-size: 1.05rem;"><i class="fas fa-cubes" style="color: var(--primary-gold); margin-left: 0.5rem;"></i> الأنشطة والمنظومات الأساسية</a></li>
+        <li><a href="#estimator" class="mobile-nav-link" style="color: var(--text-primary); text-decoration: none; font-weight: 700; font-size: 1.05rem;"><i class="fas fa-calculator" style="color: var(--primary-gold); margin-left: 0.5rem;"></i> حاسبة تقدير المشاريع</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link" style="color: var(--text-primary); text-decoration: none; font-weight: 700; font-size: 1.05rem;"><i class="fas fa-briefcase" style="color: var(--primary-gold); margin-left: 0.5rem;"></i> المشاريع المنفذة</a></li>
+        <li><a href="#lifecycle" class="mobile-nav-link" style="color: var(--text-primary); text-decoration: none; font-weight: 700; font-size: 1.05rem;"><i class="fas fa-diagram-project" style="color: var(--primary-gold); margin-left: 0.5rem;"></i> مراحل التنفيذ الهندسية</a></li>
+        <li><a href="#contact" class="mobile-nav-link" style="color: var(--text-primary); text-decoration: none; font-weight: 700; font-size: 1.05rem;"><i class="fas fa-envelope" style="color: var(--primary-gold); margin-left: 0.5rem;"></i> تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+      <button type="button" class="btn btn-primary" style="width: 100%;" onclick="openQuoteModalWithService('طلب استشارة وعرض سعر مباشر')">
+        <i class="fas fa-file-invoice"></i> طلب عرض سعر فوري
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Hero Section (Clean Formal Corporate Showcase with Ambient Video)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Seamless Ambient Live Background Motion -->
+    <video class="hero-bg-video" id="hero-bg-video" autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="auto" poster="PHOTO/TECHNOLGE.jpg">
+      <source src="PHOTO/BG_VEDIO.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+
+    <div class="container hero-grid">
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="gold-badge" style="margin-bottom: 1.3rem;">
+          <span class="status-dot"></span> شركة نوكوم المحدودة · NoComm Ltd. · ZERO COMMISSION
+        </div>
+
+        <h1 class="hero-title">
+          الهندسة المتكاملة للأنظمة الأمنية والذكية <span class="gradient-text-gold">والشبكات وإدارة المباني</span>
+        </h1>
+
+        <p class="hero-description" id="company-tagline">
+          شركة نوكوم المحدودة متخصصة في توريد وتنفيذ حلول أنظمة الأمان والمراقبة، التحكم في الدخول والخروج، إنذار الحريق، الشبكات والاتصالات، السنترالات، إدارة المباني (BMS)، والمنازل الذكية والأنظمة المرئية والصوتية بأعلى مقاييس الجودة والاعتمادية وبدون عمولة وساطة.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary btn-lg">
+            استكشف الأنشطة والمنظومات <i class="fas fa-arrow-left"></i>
+          </a>
+          <button type="button" class="btn btn-secondary btn-lg" onclick="openQuoteModalWithService('طلب استشارة عامة')">
+            <i class="fas fa-file-invoice-dollar"></i> طلب عرض سعر مباشر
+          </button>
+        </div>
+
+        <!-- Animated KPI Stat Counters -->
+        <div class="hero-stats-strip">
+          <div class="hero-stat-card">
+            <div class="hero-stat-val stat-number" data-target="50" data-prefix="+">+50</div>
+            <div class="hero-stat-lbl">مشروع وبنية هندسية منجزة</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-val stat-number" data-target="8" data-prefix="+">+8</div>
+            <div class="hero-stat-lbl">أنشطة ومنظومات تخصصية</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-val stat-number" data-target="0" data-suffix="%">0%</div>
+            <div class="hero-stat-lbl">عمولة وساطة (توريد مباشر)</div>
+          </div>
+          <div class="hero-stat-card">
+            <div class="hero-stat-val stat-number" data-target="99" data-suffix=".9%">99.9%</div>
+            <div class="hero-stat-lbl">جاهزية واعتمادية تشغيلية</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Clean Telemetry Card -->
+      <div class="hero-tech-card">
+        <div class="tech-card-header">
+          <div style="display: flex; align-items: center; gap: 0.6rem;">
+            <span class="logo-badge" style="width: 30px; height: 30px; font-size: 0.95rem;">N</span>
+            <div>
+              <div style="font-weight: 800; font-size: 0.88rem; color: #FFFFFF;">شركة نوكوم المحدودة</div>
+              <div style="font-size: 0.72rem; color: var(--text-light);">NoComm Ltd. Enterprise Overview</div>
+            </div>
+          </div>
+          <span class="gold-badge gold-badge-dark"><span class="status-dot"></span> معتمد 100%</span>
+        </div>
+
+        <div class="telemetry-grid">
+          <div class="telemetry-item">
+            <div class="telemetry-icon"><i class="fas fa-shield-halved"></i></div>
+            <div>
+              <span class="telemetry-label">الأمان والمراقبة</span>
+              <span class="telemetry-val">CCTV 4K & AI Vision</span>
+            </div>
+          </div>
+
+          <div class="telemetry-item">
+            <div class="telemetry-icon"><i class="fas fa-id-card-clip"></i></div>
+            <div>
+              <span class="telemetry-label">التحكم بالدخول</span>
+              <span class="telemetry-val">Access Control & IoT</span>
+            </div>
+          </div>
+
+          <div class="telemetry-item">
+            <div class="telemetry-icon"><i class="fas fa-fire-extinguisher"></i></div>
+            <div>
+              <span class="telemetry-label">إنذار الحريق</span>
+              <span class="telemetry-val">Addressable Fire Alarm</span>
+            </div>
+          </div>
+
+          <div class="telemetry-item">
+            <div class="telemetry-icon"><i class="fas fa-network-wired"></i></div>
+            <div>
+              <span class="telemetry-label">الشبكات والاتصالات</span>
+              <span class="telemetry-val">Fiber Optics & IP-PBX</span>
+            </div>
+          </div>
+
+          <div class="telemetry-item">
+            <div class="telemetry-icon"><i class="fas fa-building-shield"></i></div>
+            <div>
+              <span class="telemetry-label">إدارة المباني BMS</span>
+              <span class="telemetry-val">HVAC, Energy & Lighting</span>
+            </div>
+          </div>
+
+          <div class="telemetry-item">
+            <div class="telemetry-icon"><i class="fas fa-house-signal"></i></div>
+            <div>
+              <span class="telemetry-label">المنازل الذكية</span>
+              <span class="telemetry-val">Smart Home & Audio-Visual</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-live-status-bar">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <i class="fas fa-check-double" style="color: var(--primary-gold);"></i>
+            <span>مطابقة لاشتراطات الأمن الصناعي والدفاع المدني وكود البناء السعودي</span>
+          </div>
+          <span style="color: #10B981; font-weight: 800; font-size: 0.78rem;">اعتماد كامل</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Technology Compatibility Ticker
+       ========================================================================== -->
+  <section class="ticker-section" aria-label="شركاء التوافقية والأنظمة العالمية">
+    <div class="container ticker-wrapper">
+      <div class="ticker-label">
+        <i class="fas fa-handshake" style="color: var(--primary-gold); margin-left: 0.4rem;"></i> توافقية وتوريد معتمد:
+      </div>
+      <div class="ticker-track-container">
+        <div class="ticker-track">
+          <span class="ticker-item"><i class="fas fa-video"></i> HIKVISION</span>
+          <span class="ticker-item"><i class="fas fa-shield-alt"></i> DAHUA</span>
+          <span class="ticker-item"><i class="fas fa-network-wired"></i> CISCO</span>
+          <span class="ticker-item"><i class="fas fa-wifi"></i> ARUBA</span>
+          <span class="ticker-item"><i class="fas fa-fire-extinguisher"></i> HONEYWELL</span>
+          <span class="ticker-item"><i class="fas fa-bolt"></i> SCHNEIDER ELECTRIC</span>
+          <span class="ticker-item"><i class="fas fa-microchip"></i> SIEMENS</span>
+          <span class="ticker-item"><i class="fas fa-tv"></i> MILESTONE</span>
+          <span class="ticker-item"><i class="fas fa-phone-volume"></i> AVAYA</span>
+          <span class="ticker-item"><i class="fas fa-broadcast-tower"></i> BOSCH</span>
+          <!-- Duplicate for infinite smooth scrolling -->
+          <span class="ticker-item"><i class="fas fa-video"></i> HIKVISION</span>
+          <span class="ticker-item"><i class="fas fa-shield-alt"></i> DAHUA</span>
+          <span class="ticker-item"><i class="fas fa-network-wired"></i> CISCO</span>
+          <span class="ticker-item"><i class="fas fa-wifi"></i> ARUBA</span>
+          <span class="ticker-item"><i class="fas fa-fire-extinguisher"></i> HONEYWELL</span>
+          <span class="ticker-item"><i class="fas fa-bolt"></i> SCHNEIDER ELECTRIC</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Company Corporate Profile Section (بروفايل شركة نوكوم المحدودة)
+       ========================================================================== -->
+  <section class="section-padding" id="profile" style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="gold-badge"><i class="fas fa-building"></i> بروفايل الشركة ونبذة تعريفية</span>
+        <h2>شركة نوكوم المحدودة (NoComm Ltd.)</h2>
+        <p>شريككم الهندسي المتكامل في تنفيذ مشاريع البنية التحتية التقنية، الأنظمة الأمنية، وشبكات الاتصالات وإدارة المباني الذكية.</p>
+      </div>
+
+      <div class="profile-overview-card">
+        <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.5rem; align-items: center;">
+          <div>
+            <span class="gold-badge gold-badge-dark" style="margin-bottom: 0.8rem;">رؤيتنا ورسالتنا الهندسية</span>
+            <h3 style="font-size: 1.6rem; margin-bottom: 1rem; color: var(--text-primary);">
+              الريادة في تقديم حلول متكاملة تجمع بين الدقة الهندسية والتسعير المباشر
+            </h3>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.2rem; font-size: 0.96rem;">
+              تأسست <strong>شركة نوكوم المحدودة</strong> لتكون المرجع الموثوق للمنشآت الحكومية والخاصة والمطورين العقاريين في المملكة العربية السعودية. نبتكر وننفذ منظومات متطورة تغطي كافة متطلبات المشاريع من الأمان والمراقبة، التحكم بالدخول، إنذار الحريق، الشبكات، السنترالات، إدارة المباني BMS، والمنازل الذكية والأنظمة الصوتية والمرئية.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.8; font-size: 0.96rem;">
+              نعتمد نموذج <strong>ZERO COMMISSION</strong> الذي يضمن للعميل الحصول على عتاد وبرمجيات أصلية مباشرة من كبار المصنعين العالميين بدون أي وساطة، مع تنفيذ وإشراف كادر هندسي متخصص وعقود صيانة وتشغيل مستدامة.
+            </p>
+
+            <div class="profile-badges-row">
+              <span class="profile-spec-tag"><i class="fas fa-certificate"></i> مطابقة الأمن الصناعي</span>
+              <span class="profile-spec-tag"><i class="fas fa-shield-alt"></i> معتمد لدى الدفاع المدني</span>
+              <span class="profile-spec-tag"><i class="fas fa-cubes"></i> كود البناء السعودي SBC</span>
+              <span class="profile-spec-tag"><i class="fas fa-handshake"></i> توريد مباشر بدون عمولة</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Pure Clean Corporate Photo Showcase -->
+          <div class="profile-visual-showcase">
+            <img src="PHOTO/Leading the way.jpg" alt="شركة نوكوم المحدودة - الريادة في الحلول المتكاملة" loading="lazy">
+            <div class="profile-visual-overlay">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span class="service-card-badge"><i class="fas fa-award"></i> الريادة والتميز الهندسي</span>
+                <span class="tech-tag" style="background: rgba(10,15,29,0.75); color: #FFFFFF; border-color: rgba(217,160,27,0.4);"><i class="fas fa-shield-check"></i> حلول معتمدة 100%</span>
+              </div>
+
+              <div style="background: rgba(10, 15, 29, 0.78); backdrop-filter: blur(8px); padding: 0.85rem 1.1rem; border-radius: var(--radius-btn); border: 1px solid rgba(255,255,255,0.1); margin-top: auto;">
+                <div style="font-weight: 800; font-size: 0.92rem; color: #FFFFFF; margin-bottom: 0.25rem;">
+                  <i class="fas fa-building-circle-check" style="color: var(--primary-gold); margin-left: 0.35rem;"></i> شركة نوكوم المحدودة · NoComm Ltd.
+                </div>
+                <div style="font-size: 0.78rem; color: var(--text-light);">دقة هندسية وتوريد مباشر بدون عمولة وساطة</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Pillars Grid -->
+        <div class="profile-pillars-grid">
+          <div class="profile-pillar-item">
+            <div class="profile-pillar-icon"><i class="fas fa-layer-group"></i></div>
+            <h4>التكامل والشمولية الهندسية</h4>
+            <p>تصميم وتنفيذ متكامل لكافة الأنظمة التقنية تحت إشراف جهة واحدة مسؤولة تضمن التناغم التام وتوافقية البرمجيات والعتاد.</p>
+          </div>
+
+          <div class="profile-pillar-item">
+            <div class="profile-pillar-icon"><i class="fas fa-percent"></i></div>
+            <h4>التسعير المباشر العادل</h4>
+            <p>توريد مباشر من المصنعين بدون سلاسل وساطة مع شفافية مالية مطلقة توفر حتى 30% من ميزانية المشاريع التقديرية.</p>
+          </div>
+
+          <div class="profile-pillar-item">
+            <div class="profile-pillar-icon"><i class="fas fa-headset"></i></div>
+            <h4>الضمان والدعم الفني 24/7</h4>
+            <p>عقود صيانة دورية وتشغيلية (SLA) واستجابة طارئة تضمن استمرارية عمل المنشآت الحيوية بأعلى كفاءة ودون انقطاع.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Core Systems & Activities Catalog
+       ========================================================================== -->
+  <section class="section-padding" id="services" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="gold-badge"><i class="fas fa-cubes"></i> منظومة الحلول التخصصية</span>
+        <h2>أنشطة ومنظومات شركة نوكوم المحدودة</h2>
+        <p>حلول هندسية مصممة للمباني الإدارية، المجمعات التجارية، المنشآت الصحية، المشاريع السكنية، والمستودعات والمصانع.</p>
+      </div>
+
+      <!-- Filter Tabs Navigation -->
+      <div class="services-tabs-nav">
+        <button type="button" class="tab-filter-btn active" data-filter="all">جميع الأنشطة</button>
+        <button type="button" class="tab-filter-btn" data-filter="security">الأمان والمراقبة والتحكم</button>
+        <button type="button" class="tab-filter-btn" data-filter="safety">إنذار الحريق</button>
+        <button type="button" class="tab-filter-btn" data-filter="networks">الشبكات والألياف</button>
+        <button type="button" class="tab-filter-btn" data-filter="telecom">السنترالات والاتصالات</button>
+        <button type="button" class="tab-filter-btn" data-filter="bms">إدارة المباني BMS</button>
+        <button type="button" class="tab-filter-btn" data-filter="smarthome">المنازل الذكية</button>
+        <button type="button" class="tab-filter-btn" data-filter="audiovisual">المرئيات والصوتيات</button>
+      </div>
+
+      <!-- Dynamic / Enhanced Services Catalog Grid -->
+      <div class="services-catalog-grid" id="services-catalog-grid">
+        <!-- Rendered dynamically via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Interactive Project Cost & Scope Estimator Widget
+       ========================================================================== -->
+  <section class="section-padding" id="estimator" style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="gold-badge"><i class="fas fa-calculator"></i> تقدير فوري ومباشر</span>
+        <h2>حاسبة تقدير متطلبات المشروع</h2>
+        <p>حدد نوع منشأتك والمنظومات التقنية المطلوبة للحصول على تقدير هندسي فوري وعرض سعر مباشر من مهندسي نوكوم المحدودة.</p>
+      </div>
+
+      <div class="calculator-card">
+        <!-- Step 1: Facility Type -->
+        <div class="calc-step-title">
+          <span class="calc-step-number">1</span> حدد نوع المنشأة أو المشروع:
+        </div>
+        <div class="calc-options-grid">
+          <div class="calc-option-btn calc-facility-btn selected" data-facility="مبنى إداري / مكاتب">
+            <i class="fas fa-building"></i>
+            <div>مبنى إداري / مكاتب</div>
+          </div>
+          <div class="calc-option-btn calc-facility-btn" data-facility="مجمع سكني / فيلا ذكية">
+            <i class="fas fa-house-chimney"></i>
+            <div>مجمع سكني / فيلا ذكية</div>
+          </div>
+          <div class="calc-option-btn calc-facility-btn" data-facility="مركز تسوق / مول تجاري">
+            <i class="fas fa-store"></i>
+            <div>مركز تسوق / مول تجاري</div>
+          </div>
+          <div class="calc-option-btn calc-facility-btn" data-facility="مستشفى / منشأة صحية">
+            <i class="fas fa-hospital"></i>
+            <div>مستشفى / منشأة صحية</div>
+          </div>
+          <div class="calc-option-btn calc-facility-btn" data-facility="مصنع / مستودعات لوجستية">
+            <i class="fas fa-warehouse"></i>
+            <div>مصنع / مستودعات</div>
+          </div>
+        </div>
+
+        <!-- Step 2: Select Systems -->
+        <div class="calc-step-title">
+          <span class="calc-step-number">2</span> حدد المنظومات التقنية المطلوبة (يمكن اختيار أكثر من منظومة):
+        </div>
+        <div class="calc-options-grid">
+          <div class="calc-option-btn calc-system-btn selected" data-system="أنظمة الأمان والمراقبة (CCTV)">
+            <i class="fas fa-video"></i>
+            <div>أنظمة الأمان والمراقبة</div>
+          </div>
+          <div class="calc-option-btn calc-system-btn selected" data-system="أنظمة التحكم بالدخول والخروج">
+            <i class="fas fa-id-card-clip"></i>
+            <div>التحكم بالدخول والخروج</div>
+          </div>
+          <div class="calc-option-btn calc-system-btn" data-system="أنظمة إنذار الحريق">
+            <i class="fas fa-fire-extinguisher"></i>
+            <div>أنظمة إنذار الحريق</div>
+          </div>
+          <div class="calc-option-btn calc-system-btn" data-system="الشبكات والاتصالات والبنية التحتية">
+            <i class="fas fa-network-wired"></i>
+            <div>الشبكات والألياف الضوئية</div>
+          </div>
+          <div class="calc-option-btn calc-system-btn" data-system="السنترالات والاتصالات الموحدة">
+            <i class="fas fa-phone-volume"></i>
+            <div>السنترالات والاتصالات IP</div>
+          </div>
+          <div class="calc-option-btn calc-system-btn" data-system="إدارة المباني الذكية (BMS)">
+            <i class="fas fa-building-shield"></i>
+            <div>إدارة المباني الذكية BMS</div>
+          </div>
+          <div class="calc-option-btn calc-system-btn" data-system="أنظمة المنازل الذكية">
+            <i class="fas fa-house-signal"></i>
+            <div>المنازل الذكية والأتمتة</div>
+          </div>
+          <div class="calc-option-btn calc-system-btn" data-system="الأنظمة المرئية والصوتية وشاشات العرض">
+            <i class="fas fa-tv"></i>
+            <div>المرئيات والصوتيات SOC</div>
+          </div>
+        </div>
+
+        <!-- Summary Panel -->
+        <div class="calc-summary-panel">
+          <div>
+            <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 0.25rem;">ملخص التقدير التقني:</div>
+            <div style="font-size: 1.2rem; font-weight: 800; color: #FFFFFF;" id="calc-summary-estimate">توريد وتنفيذ مباشر لمشروع (مبنى إداري / مكاتب) — ZERO COMMISSION</div>
+            <div style="font-size: 0.85rem; color: var(--primary-gold); margin-top: 0.2rem;" id="calc-summary-systems-count">2 منظومات مختارة</div>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg" id="calc-btn-quote">
+            <i class="fas fa-paper-plane"></i> تقديم طلب عرض السعر الآن
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Strategic Projects & Case Studies
+       ========================================================================== -->
+  <section class="section-padding" id="portfolio" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="gold-badge"><i class="fas fa-briefcase"></i> سجل الإنجازات</span>
+        <h2>المشاريع الاستراتيجية والمنفذة</h2>
+        <p>نماذج من إنجازات شركة نوكوم المحدودة في تجهيز المباني والمنشآت الحيوية بأحدث الأنظمة الذكية والأمنية.</p>
+      </div>
+
+      <div class="portfolio-grid" id="public-projects-grid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Engineering Lifecycle Roadmap (5 Stages)
+       ========================================================================== -->
+  <section class="section-padding" id="lifecycle" style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="gold-badge"><i class="fas fa-diagram-project"></i> منهجية العمل</span>
+        <h2>مراحل التنفيذ الهندسي المتكامل</h2>
+        <p>نلتزم بأعلى معايير إدارة المشاريع الهندسية من مرحلة المخططات الأولية حتى التسليم والتشغيل الميداني.</p>
+      </div>
+
+      <div class="roadmap-grid">
+        <div class="roadmap-step-card">
+          <div class="roadmap-step-num">01</div>
+          <h4>المسح والتصميم الهندسي</h4>
+          <p>دراسة الموقع الميداني وإعداد مخططات الـ CAD/BIM وجداول الكميات المعتمدة.</p>
+        </div>
+
+        <div class="roadmap-step-card">
+          <div class="roadmap-step-num">02</div>
+          <h4>التوريد المباشر للمواد</h4>
+          <p>شحن واعتماد الأجهزة والمعدات من المصنعين بدون أي رسوم وساطة إضافية.</p>
+        </div>
+
+        <div class="roadmap-step-card">
+          <div class="roadmap-step-num">03</div>
+          <h4>التمديدات والتركيب</h4>
+          <p>تنفيذ كوابل الألياف والبنية التحتية وتركيب الحساسات والكاميرات بمقاييس دقيقة.</p>
+        </div>
+
+        <div class="roadmap-step-card">
+          <div class="roadmap-step-num">04</div>
+          <h4>البرمجة والتشغيل التجريبي</h4>
+          <p>ربط المنظومات وضبط إعدادات الخوادم والذكاء الاصطناعي واختبارات الأداء الشاملة.</p>
+        </div>
+
+        <div class="roadmap-step-card">
+          <div class="roadmap-step-num">05</div>
+          <h4>التسليم والتدريب والضمان</h4>
+          <p>تسليم المخططات الختامية As-Built، تدريب الكوادر، وتفعيل عقود الصيانة والـ SLA.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Enterprise Consultation & Contact Section
+       ========================================================================== -->
+  <section class="section-padding" id="contact" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="gold-badge"><i class="fas fa-headset"></i> قنوات التواصل المباشر</span>
+        <h2>تواصل مع الفريق الهندسي لشركة نوكوم المحدودة</h2>
+        <p>نسعد باستقبال استفساراتكم ومناقشة متطلبات مشاريعكم لتزويدكم بأفضل الحلول الهندسية بأعلى جودة وبدون عمولة.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Panel -->
+        <div class="contact-info-panel">
+          <span class="gold-badge gold-badge-dark" style="margin-bottom: 0.8rem;">المقر الرئيسي</span>
+          <h3>شركة نوكوم المحدودة</h3>
+          <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7;">
+            فريقنا الهندسي مستعد لتلبية طلبات التوريد والتركيب والدراسات الميدانية لكافة المنشآت في جميع مدن ومناطق المملكة العربية السعودية.
+          </p>
+
+          <ul class="contact-info-list">
+            <li class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem; color: #FFFFFF;">العنوان والمقر:</strong>
+                <span class="dynamic-company-address" style="color: var(--text-light); font-size: 0.88rem;">الرياض، المملكة العربية السعودية</span>
+              </div>
+            </li>
+
+            <li class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem; color: #FFFFFF;">الاتصال الهاتفي المباشر:</strong>
+                <span class="dynamic-company-phone font-num" style="color: var(--text-light); font-size: 0.88rem; direction: ltr; display: inline-block;">+966 11 234 5678</span>
+              </div>
+            </li>
+
+            <li class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem; color: #FFFFFF;">البريد الإلكتروني الرسمي:</strong>
+                <span class="dynamic-company-email" style="color: var(--text-light); font-size: 0.88rem;">info@nocom.sa</span>
+              </div>
+            </li>
+
+            <li class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem; color: #FFFFFF;">ساعات العمل الرسمية:</strong>
+                <span style="color: var(--text-light); font-size: 0.88rem;">الأحد – الخميس: 8:00 صباحاً – 5:00 مساءً</span>
+              </div>
+            </li>
+          </ul>
+
+          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-dark);">
+            <a href="https://wa.me/966500000000" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+              <i class="fab fa-whatsapp"></i> محادثة فورية عبر واتساب
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive AJAX Contact Form -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.4rem;">طلب استشارة أو عرض سعر</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.8rem;">يرجى ملء النموذج وسيتم التواصل معكم من قِبل مهندسينا خلال أقل من 24 ساعة عمل.</p>
+
+          <form id="main-contact-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="c-name">الاسم الكامل *</label>
+                <input type="text" class="form-input" id="c-name" placeholder="مثال: م. أحمد السعيد" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="c-phone">رقم الجوال / الهاتف *</label>
+                <input type="tel" class="form-input font-num" id="c-phone" placeholder="05xxxxxxxx" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="c-email">البريد الإلكتروني *</label>
+                <input type="email" class="form-input" id="c-email" placeholder="name@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="c-subject">النشاط أو المنظومة المطلوبة</label>
+                <select class="form-select" id="c-subject">
+                  <option value="استشارة هندسية عامة">استشارة هندسية عامة</option>
+                  <option value="أنظمة الأمان والمراقبة">أنظمة الأمان والمراقبة (CCTV & AI)</option>
+                  <option value="أنظمة التحكم بالدخول والخروج">أنظمة التحكم بالدخول والخروج (Access Control)</option>
+                  <option value="أنظمة إنذار الحريق">أنظمة إنذار الحريق والسلامة (Fire Alarm)</option>
+                  <option value="الشبكات والاتصالات">الشبكات والاتصالات والألياف الضوئية</option>
+                  <option value="السنترالات والاتصالات الموحدة">السنترالات والاتصالات الموحدة (IP-PBX)</option>
+                  <option value="إدارة المباني الذكية BMS">إدارة المباني الذكية (BMS)</option>
+                  <option value="المنازل الذكية">أنظمة المنازل الذكية والأتمتة</option>
+                  <option value="الأنظمة المرئية والصوتية">الأنظمة المرئية والصوتية وشاشات Video Wall</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="c-message">تفاصيل المشروع أو الاستفسار *</label>
+              <textarea class="form-input form-textarea" id="c-message" rows="4" placeholder="اذكر نبذة عن موقع المنشأة، المساحة، والأنظمة المطلوب تنفيذها..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 0.5rem;" id="btn-contact-submit">
+              إرسال طلب الاستشارة الآن <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Enterprise Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Column 1: Brand -->
+      <div class="footer-col">
+        <a href="index.html" class="logo-container" style="margin-bottom: 1.2rem; display: inline-flex;">
+          <span class="logo-badge">N</span>
+          <span class="logo-name en-headline" style="color: #FFFFFF;">NoComm Ltd.</span>
+        </a>
+        <p style="color: #94A3B8; font-size: 0.92rem; line-height: 1.8; margin-bottom: 1.4rem;">
+          شركة نوكوم المحدودة — الرائدة في تنفيذ مشاريع البنية التحتية، الأنظمة الأمنية والمراقبة الذكية، الشبكات، السنترالات، إدارة المباني BMS، والمنازل الذكية بأعلى مقاييس الجودة العالمية.
+        </p>
+        <span class="gold-badge gold-badge-dark"><span class="status-dot"></span> All Systems Operational</span>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul class="footer-links">
+          <li><a href="#hero"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+          <li><a href="#profile"><i class="fas fa-angle-left"></i> بروفايل الشركة</a></li>
+          <li><a href="#services"><i class="fas fa-angle-left"></i> الأنشطة والمنظومات</a></li>
+          <li><a href="#estimator"><i class="fas fa-angle-left"></i> حاسبة تقدير المشاريع</a></li>
+          <li><a href="#portfolio"><i class="fas fa-angle-left"></i> سجل المشاريع المنفذة</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Systems Catalog -->
+      <div class="footer-col">
+        <h4>الأنشطة التخصصية</h4>
+        <ul class="footer-links">
+          <li><a href="#services"><i class="fas fa-video"></i> الأمان والمراقبة (CCTV)</a></li>
+          <li><a href="#services"><i class="fas fa-id-card-clip"></i> التحكم بالدخول والخروج</a></li>
+          <li><a href="#services"><i class="fas fa-fire-extinguisher"></i> أنظمة إنذار الحريق</a></li>
+          <li><a href="#services"><i class="fas fa-network-wired"></i> الشبكات والألياف الضوئية</a></li>
+          <li><a href="#services"><i class="fas fa-building-shield"></i> إدارة المباني BMS</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Direct Portal & Contact -->
+      <div class="footer-col">
+        <h4>التواصل المباشر</h4>
+        <p style="color: #94A3B8; font-size: 0.88rem; margin-bottom: 1.2rem;">
+          نسعد باستقبال استفسارات الشركات والمطورين والمقاولين لتنفيذ المشاريع التقنية والأمنية.
+        </p>
+        <button type="button" class="btn btn-primary btn-sm" style="width: 100%; margin-bottom: 1rem;" onclick="openQuoteModalWithService('طلب استشارة هندسية')">
+          <i class="fas fa-file-invoice"></i> طلب عرض سعر فوري
+        </button>
+        <div style="font-size: 0.85rem; color: #94A3B8;">
+          <i class="fas fa-envelope" style="color: var(--primary-gold); margin-left: 0.4rem;"></i> info@nocom.sa
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>
+        © 2026 شركة نوكوم المحدودة (NoComm Ltd.). جميع الحقوق محفوظة. ZERO COMMISSION · بدون عمولة.
+      </div>
+      <div style="display: flex; gap: 1.5rem;">
+        <a href="#hero" style="color: #64748B; text-decoration: none;">الرئيسية</a>
+        <a href="#profile" style="color: #64748B; text-decoration: none;">البروفايل</a>
+        <a href="#services" style="color: #64748B; text-decoration: none;">الأنظمة</a>
+        <a href="#contact" style="color: #64748B; text-decoration: none;">اتصل بنا</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Quote Request Interactive Modal Dialog
+       ========================================================================== -->
+  <div class="modal-overlay" id="quote-request-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <div class="service-icon-box" style="width: 36px; height: 36px; font-size: 1rem; margin-bottom: 0;">
+            <i class="fas fa-file-invoice"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.15rem;">طلب مواصفات وعرض سعر مباشر</h3>
+            <div style="font-size: 0.78rem; color: var(--text-muted);">شركة نوكوم المحدودة · ZERO COMMISSION</div>
+          </div>
+        </div>
+        <button type="button" id="quote-modal-close" style="background: none; border: none; font-size: 1.2rem; color: var(--text-muted); cursor: pointer;" aria-label="إغلاق">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <form id="quote-modal-form">
+        <div class="form-group">
+          <label class="form-label" for="qm-system">النشاط أو المنظومة المحددة</label>
+          <input type="text" class="form-input" id="qm-system" readonly style="background: var(--bg-subtle); font-weight: 700;">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="qm-name">الاسم / اسم المنشأة *</label>
+            <input type="text" class="form-input" id="qm-name" required placeholder="مثال: شركة التطوير العقاري">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="qm-phone">رقم الهاتف / الجوال *</label>
+            <input type="tel" class="form-input font-num" id="qm-phone" required placeholder="05xxxxxxxx">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="qm-email">البريد الإلكتروني *</label>
+          <input type="email" class="form-input" id="qm-email" required placeholder="name@company.com">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="qm-notes">ملاحظات أو تفاصيل المشروع</label>
+          <textarea class="form-input form-textarea" id="qm-notes" rows="3" placeholder="حدد نوع المنشأة، المساحة، أو عدد النقاط والأجهزة التقريبية..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 0.8rem; margin-top: 1.2rem;">
+          <button type="submit" class="btn btn-primary" style="flex: 1;">
+            <i class="fas fa-paper-plane"></i> إرسال الطلب المباشر
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="document.getElementById('quote-request-modal').classList.remove('active')">
+            إلغاء
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Floating Quick Action Buttons (WhatsApp & Back to Top)
+       ========================================================================== -->
+  <div class="floating-actions">
+    <a href="https://wa.me/966500000000" target="_blank" rel="noopener noreferrer" class="fab-btn fab-whatsapp" aria-label="محادثة واتساب مباشرة">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button type="button" class="fab-btn fab-top" id="btn-back-to-top" aria-label="الصعود للأعلى">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       Cinematic Video Showcase Modal Dialog
+       ========================================================================== -->
+  <div class="video-modal-overlay" id="video-showcase-modal">
+    <div class="video-modal-container">
+      <div class="video-modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <div class="service-icon-box" style="width: 34px; height: 34px; font-size: 0.95rem; margin-bottom: 0;">
+            <i class="fas fa-video"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.05rem; color: #FFFFFF;">المشهد الهندسي والتقني — شركة نوكوم المحدودة</h3>
+            <div style="font-size: 0.75rem; color: var(--text-light);">NoComm Ltd. Cinematic Enterprise Showcase</div>
+          </div>
+        </div>
+        <button type="button" id="video-modal-close" style="background: none; border: none; font-size: 1.3rem; color: #94A3B8; cursor: pointer;" aria-label="إغلاق الفيديو">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="video-modal-body">
+        <video id="showcase-player-video" controls playsinline poster="PHOTO/TECHNOLGE.jpg" style="width: 100%; max-height: 75vh; outline: none; background: #000;">
+          <source src="PHOTO/BG_VEDIO.mp4" type="video/mp4">
+          متصفحك لا يدعم تشغيل الفيديو.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Standalone Landing Script -->
+  <script src="js/landing.js"></script>
+</body>
+</html>

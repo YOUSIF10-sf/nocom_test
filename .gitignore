@@ -1,0 +1,14 @@
+# Backend & Database
+server.py
+db.py
+database.db
+__pycache__/
+*.pyc
+
+# Admin Dashboard (Excluded as requested for landing only)
+admin/
+
+# Environment / Temp
+.env
+.DS_Store
+Thumbs.db
